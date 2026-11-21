@@ -1,0 +1,449 @@
+
+/* COLORES DEL BLOG */
+:root {
+    --rosa: #E98BB5;
+    --rosa-claro: #F7C9DC;
+    --morado: #24172D;
+    --negro: #17151B;
+    --blanco: #F5F0F2;
+    --lila: #B9A5C9;
+}
+
+/* CONFIGURACIÓN GENERAL */
+body {
+    background-color: var(--morado);
+    color: var(--blanco);
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* BARRA DE NAVEGACIÓN */
+.navbar {
+    background-color: var(--negro);
+    padding: 18px 0;
+}
+
+.navbar-brand {
+    font-size: 23px;
+    font-weight: bold;
+    color: var(--blanco);
+}
+
+.navbar-brand span {
+    color: var(--rosa);
+}
+
+.navbar-nav {
+    gap: 12px;
+}
+
+.nav-link {
+    color: var(--blanco) 
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--rosa)
+}
+
+/* PORTADA PRINCIPAL */
+.portada {
+    padding: 90px 0;
+    background-color: var(--morado);
+}
+
+.subtitulo {
+    color: var(--rosa);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.portada h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.portada h1 span {
+    color: var(--rosa);
+    display: block;
+}
+
+.descripcion {
+    color: var(--blanco);
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+/* BOTÓN ROSA */
+.btn-rosa {
+    background-color: var(--rosa);
+    color: var(--negro);
+    padding: 13px 23px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-rosa:hover {
+    background-color: var(--rosa-claro);
+    color: var(--negro);
+}
+
+/* IMAGEN DE PORTADA */
+.imagen-portada {
+    max-height: 380px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* FRASE MUSICAL */
+.frase-musical {
+    background-color: var(--negro);
+    padding: 55px 20px;
+}
+
+.frase-musical i {
+    color: var(--rosa);
+    font-size: 35px;
+}
+
+.frase-musical h2 {
+    color: var(--rosa-claro);
+    margin: 18px 0;
+    font-size: 30px;
+}
+
+.frase-musical p {
+    color: var(--blanco);
+}
+
+/* CONTENIDO */
+.seccion-contenido {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.seccion-contenido h2 {
+    color: var(--rosa);
+    margin-bottom: 18px;
+}
+
+/* SECCIÓN DE CANCIONES */
+.canciones {
+    padding: 75px 0;
+    background-color: #17151B;
+}
+
+.canciones h2 {
+    color: var(--rosa);
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.canciones .container > .text-center > p:last-child {
+    color: var(--blanco);
+}
+
+/* TARJETAS MUSICALES */
+.tarjeta-musical {
+    background-color: #24172D;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.tarjeta-musical:hover {
+    transform: translateY(-7px);
+}
+
+.tarjeta-musical img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.contenido-tarjeta {
+    padding: 22px;
+}
+
+.contenido-tarjeta h3 {
+    color: var(--rosa-claro);
+    font-size: 21px;
+    margin-top: 12px;
+}
+
+.contenido-tarjeta p {
+    color: var(--blanco);
+    line-height: 1.6;
+}
+
+.etiqueta {
+    background-color: var(--rosa);
+    color: var(--negro);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* SECCIÓN DESCUBRE */
+.descubre {
+    background-color: var(--rosa-claro);
+    color: var(--negro);
+    padding: 75px 0;
+}
+
+.descubre h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.descubre p {
+    line-height: 1.8;
+}
+
+.imagen-descubre {
+    max-height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* PIE DE PÁGINA */
+.footer {
+    background-color: var(--negro);
+    padding: 45px 0 20px;
+    text-align: center;
+}
+
+.footer h3 {
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+.footer h3 span {
+    color: var(--rosa);
+}
+
+.footer p {
+    color: var(--blanco);
+}
+
+.redes-sociales {
+    margin: 20px 0;
+}
+
+.redes-sociales i {
+    color: var(--rosa);
+    font-size: 25px;
+    margin: 0 12px;
+}
+
+.footer hr {
+    border-color: var(--lila);
+}
+
+.copyright {
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+/* ENCABEZADO DE GÉNEROS */
+.encabezado-generos {
+    padding: 75px 0;
+    background-color: var(--morado);
+}
+
+.encabezado-generos h1 {
+    color: var(--rosa);
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.encabezado-generos p:last-child {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* TARJETAS DE GÉNEROS */
+.seccion-generos {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.tarjeta-genero {
+    background-color: #17151B;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.tarjeta-genero:hover {
+    transform: translateY(-7px);
+}
+
+.tarjeta-genero img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.tarjeta-genero h2 {
+    color: var(--rosa-claro);
+    font-size: 23px;
+    margin-top: 15px;
+}
+
+/* PÁGINA DE CANCIONES Y ÁLBUMES */
+
+.seccion-carrusel {
+    background-color: var(--negro);
+    padding: 65px 0;
+}
+
+.seccion-carrusel h2 {
+    color: var(--rosa);
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.seccion-carrusel .carousel {
+    max-width: 850px;
+    margin: auto;
+}
+
+.seccion-carrusel .carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.seccion-generos > .container > .text-center > h2 {
+    color: var(--rosa);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.seccion-generos > .container > .text-center > p:last-child {
+    color: var(--blanco);
+}
+
+.seccion-carrusel .carousel {
+    max-width: 700px;
+    margin: auto;
+}
+
+.seccion-carrusel .carousel-item img {
+    width: 100%;
+    height: 320px;
+    object-fit: contain;
+    background-color: var(--morado);
+    border-radius: 18px;
+}
+
+/* BARRITAS DEL CARRUSEL */
+.seccion-carrusel .carousel-indicators {
+    bottom: -45px;
+}
+
+.seccion-carrusel .carousel-indicators [data-bs-target] {
+    background-color: var(--rosa);
+    width: 35px;
+    height: 5px;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+
+.seccion-carrusel .carousel-indicators .active {
+    opacity: 1;
+}
+
+/* TARJETA MI HISTORIA */
+.tarjeta-historia {
+    background-color: var(--negro);
+    color: var(--blanco);
+    border: 1px solid var(--lila);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.tarjeta-historia img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.tarjeta-historia h2 {
+    color: var(--rosa);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.tarjeta-historia p {
+    line-height: 1.7;
+}
+
+.btn-spotify {
+    background-color: #1DB954;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn-spotify:hover {
+    background-color: #168d40;
+    color: white;
+}
+
+/* FORMULARIO DE SUSCRIPCIÓN */
+.formulario-musical {
+    background-color: var(--negro);
+    padding: 35px;
+    border-radius: 18px;
+    border: 1px solid var(--lila);
+}
+
+.formulario-musical fieldset {
+    border: 1px solid var(--lila);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.formulario-musical legend {
+    color: var(--rosa);
+    font-size: 22px;
+    font-weight: bold;
+    float: none;
+    width: auto;
+    padding: 0 10px;
+}
+
+.formulario-musical label,
+.formulario-musical p {
+    color: var(--blanco);
+}
+
+.formulario-musical input[type="radio"],
+.formulario-musical input[type="checkbox"] {
+    margin: 8px;
+    accent-color: var(--rosa);
+}
+
+.formulario-musical .form-control {
+    background-color: var(--morado);
+    color: var(--blanco);
+    border: 1px solid var(--lila);
+}
+
+.formulario-musical .form-control::placeholder {
+    color: var(--lila);
+}
